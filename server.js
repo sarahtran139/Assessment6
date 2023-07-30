@@ -4,10 +4,12 @@ const bots = require("./src/botsData");
 const shuffle = require("./src/shuffle");
 
 const rollbar = new Rollbar({
-  accessToken: "rollbar_one", 
+  accessToken: 'f5bbd1458e9948f48148a63774b09387',
   captureUncaught: true,
   captureUnhandledRejections: true,
-});
+})
+
+rollbar.log('Hello world')
 
 const playerRecord = {
   wins: 0,
